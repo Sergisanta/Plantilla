@@ -5,19 +5,21 @@
  **                                                                                             **
  ************************************************************************************************/
 
+//************Variables*****************************************
+int ledpin=13;
 
  //la funció de Setup s'executa al prémer reinici o el tauler
 void setup() {
 //inicialitzar pin digital 13 com una sortida
- pinMode(13, OUTPUT);
+ pinMode(ledpin, OUTPUT);
 }
 
 
 
 // La funció de Loop s'executa una vegada i una altra per sempre
 void loop() {
- digitalWrite(13, HIGH);      // Encén el LED ( ALTA és el nivell de tensió ) 
+ digitalWrite(ledpin, HIGH);      // Encén el LED ( ALTA és el nivell de tensió ) 
  delay(1000);                 // Esperar un segon
- digitalWrite(13, LOW);       // Apagar el LED fent que la tensió BAIXA
+ digitalWrite(ledpin, LOW);       // Apagar el LED fent que la tensió BAIXA
  delay(1000);                 // Esperar un segon
 }
